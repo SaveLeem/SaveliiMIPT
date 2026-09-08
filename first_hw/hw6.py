@@ -39,33 +39,3 @@ Result = change_base(sum10, base)
 f = open('output.txt', 'w')
 f.write(Result)
 f.close()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-if op == "+":
-    res = sum(nums)
-elif op == "-":
-    res = res = 2 * nums[0] - sum(nums)
-elif op == '*':
-    res = 1
-    for x in nums:
-        res *= x
-f = open('output.txt', 'w')
-f.write(str(res))
-f.close
