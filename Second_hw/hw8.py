@@ -1,7 +1,5 @@
-data = []
-n = int(input("кол-во элементов"))
-for i in range(n):
-    data.append(int(input()))
+n = int(input())
+data = list(map(int, input().split()))
 
 half = n // 2
 for i in range(n):
