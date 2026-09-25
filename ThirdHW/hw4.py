@@ -10,7 +10,7 @@ def triangle(size, symb, i=1):
         i: Номер текущей строки (начинается с 1).
     """
     # База рекурсии: строки закончились
-    if i > size:
+    if i > size//2 + 1:
         return
 
     # Прямой ход: печатаем растущие строки
@@ -18,8 +18,8 @@ def triangle(size, symb, i=1):
     triangle(size, symb, i + 1)
 
     # Обратный ход: печатаем убывающие строки
-    if i < size:
+    if i < size//2 + 1:
         print(symb * i)
 
 
-triangle(7, 'c')
+triangle(5, 'c')
